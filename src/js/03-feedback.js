@@ -29,6 +29,6 @@ function onFormSubmit(event){
         message: message.value,
     };
     event.target.reset();
-    localStorage.clear("feedback-form-state");
+    localStorage.removeItem("feedback-form-state");
     console.log(formData);
 };
