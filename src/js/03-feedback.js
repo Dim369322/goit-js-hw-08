@@ -24,6 +24,10 @@ function onWindowLoad(){
 
 function onFormSubmit(event){
     event.preventDefault();
+    if (!email.value || !message.value){
+        alert(`Fill in all fields for submit `);
+        return;
+    }
     const formData = {
         email: email.value,
         message: message.value,
