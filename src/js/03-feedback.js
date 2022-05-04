@@ -12,7 +12,6 @@ const localFormValue = localStorage.getItem("feedback-form-state");
 const formValue = JSON.parse(localFormValue);
 
 window.addEventListener('load', onWindowLoad);
-
 form.addEventListener('submit', onFormSubmit);
 
 function onWindowLoad(){
