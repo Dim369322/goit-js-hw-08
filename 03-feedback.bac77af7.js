@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a=document.querySelector(".feedback-form"),l=document.querySelector('input[name="email"]'),r=document.querySelector('textarea[name="message"]');a.addEventListener("input",(0,e.default)(()=>{localStorage.setItem("feedback-form-state",JSON.stringify({email:l.value,message:r.value}))},500));const o=localStorage.getItem("feedback-form-state"),n=JSON.parse(o);function s(){n&&(l.value=n.email,r.value=n.message)}function u(e){if(e.preventDefault(),!l.value||!r.value)return void alert("Fill in all fields for submit ");const t={email:l.value,message:r.value};e.target.reset(),localStorage.removeItem("feedback-form-state"),console.log(t)}window.addEventListener("load",s),a.addEventListener("submit",u);
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/goit-js-hw-08/03-feedback.64281bd4.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.bac77af7.js.map
